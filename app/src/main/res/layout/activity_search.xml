@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+    <!-- App Bar (Header) -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#880E4F"
+        android:title="Search Gifts"
+        android:titleTextColor="#FFFFFF"
+        android:elevation="4dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_alignParentTop="true"
+        app:contentInsetStart="0dp" />
+
+    <!-- ScrollView for content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:padding="16dp">
+
+        <!-- Content Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Image Section (Optional) -->
+
+            <!-- Search Bar Section -->
+            <ImageView
+                android:id="@+id/imageSection"
+                android:layout_width="365dp"
+                android:layout_height="293dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="90dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="Image related to search"
+                android:importantForAccessibility="no"
+                android:scaleType="centerCrop"
+                android:src="@drawable/searching" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:paddingBottom="16dp">
+
+                <EditText
+                    android:id="@+id/searchEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_search_box"
+                    android:contentDescription="Search gifts"
+                    android:drawableLeft="@drawable/ic_search_small"
+                    android:drawablePadding="16dp"
+                    android:gravity="center_vertical"
+                    android:hint="Search for gifts..."
+                    android:importantForAccessibility="yes"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textSize="16sp" />
+
+                <!-- Search Button -->
+                <Button
+                    android:id="@+id/searchButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="#CA7373"
+                    android:contentDescription="Search button"
+                    android:importantForAccessibility="yes"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="8dp"
+                    android:text="Search"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+
+            <!-- Filters Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp">
+
+                <!-- Price Filter Spinner -->
+                <Spinner
+                    android:id="@+id/priceSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:importantForAccessibility="yes"
+                    android:contentDescription="Price filter spinner" />
+
+                <!-- Category Filter Spinner -->
+                <Spinner
+                    android:id="@+id/categorySpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:importantForAccessibility="yes"
+                    android:contentDescription="Category filter spinner" />
+
+                <!-- Occasion Filter Spinner -->
+                <Spinner
+                    android:id="@+id/occasionSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:importantForAccessibility="yes"
+                    android:contentDescription="Occasion filter spinner" />
+            </LinearLayout>
+
+            <!-- Filter Button -->
+            <Button
+                android:id="@+id/filterButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                android:text="Apply Filters"
+                android:textColor="#CA7373"
+                android:textAllCaps="false"
+                android:contentDescription="Filter button"
+                android:importantForAccessibility="yes"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp" />
+            <!-- Results Section -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/resultsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="List of gift search results"
+                android:importantForAccessibility="yes"
+                android:paddingTop="8dp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

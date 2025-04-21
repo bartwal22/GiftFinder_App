@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Watch",
+    "price": 2000,
+    "category": "Accessories",
+    "occasion": "Birthday"
+  },
+  {
+    "name": "Chocolates",
+    "price": 500,
+    "category": "Food",
+    "occasion": "Valentine"
+  },
+  {
+    "name": "Teddy Bear",
+    "price": 1000,
+    "category": "Toys",
+    "occasion": "Anniversary"
+  },
+  {
+    "name": "Perfume",
+    "price": 1500,
+    "category": "Cosmetics",
+    "occasion": "Birthday"
+  },
+  {
+    "name": "Flowers",
+    "price": 300,
+    "category": "Decoration",
+    "occasion": "Wedding"
+  },
+  {
+    "name": "Headphones",
+    "price": 2500,
+    "category": "Electronics",
+    "occasion": "Christmas"
+  },
+  {
+    "name": "Gift Card",
+    "price": 1000,
+    "category": "Gift",
+    "occasion": "Any"
+  },
+  {
+    "name": "Smartphone",
+    "price": 50000,
+    "category": "Electronics",
+    "occasion": "Birthday"
+  },
+  {
+    "name": "Laptop",
+    "price": 70000,
+    "category": "Electronics",
+    "occasion": "Christmas"
+  },
+  {
+    "name": "Handbag",
+    "price": 3000,
+    "category": "Accessories",
+    "occasion": "Valentine"
+  },
+  {
+    "name": "Sunglasses",
+    "price": 2500,
+    "category": "Accessories",
+    "occasion": "Summer"
+  }
+]

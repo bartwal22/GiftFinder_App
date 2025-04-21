@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background">
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/preferencesTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preferences"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/title_text_color"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <!-- ScrollView for Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/preferencesTitle"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- Notification Preferences -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:background="@drawable/card_background"
+                android:padding="12dp"
+                android:layout_marginTop="16dp"
+                android:elevation="4dp">
+
+                <CheckBox
+                    android:id="@+id/checkboxNotification"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Enable Notifications"
+                    android:textSize="16sp"
+                    android:textColor="@color/title_text_color" />
+
+            </LinearLayout>
+
+            <!-- Dark Mode Preferences -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:background="@drawable/card_background"
+                android:padding="12dp"
+                android:layout_marginTop="16dp"
+                android:elevation="4dp">
+
+                <CheckBox
+                    android:id="@+id/checkboxDarkMode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Enable Dark Mode"
+                    android:textSize="16sp"
+                    android:textColor="@color/title_text_color" />
+
+            </LinearLayout>
+
+            <!-- Save Button -->
+            <Button
+                android:id="@+id/btnSavePreferences"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Preferences"
+                android:textColor="#CA7373"
+                android:textSize="20dp"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="32dp"
+                android:padding="12dp"
+                android:elevation="4dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

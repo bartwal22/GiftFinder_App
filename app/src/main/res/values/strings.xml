@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PerfectPresents</string>
+
+    <!-- Add Language Options -->
+    <string-array name="languages">
+        <item>English</item>
+        <item>Spanish</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Italian</item>
+    </string-array>
+    <string-array name="filter_options">
+        <item>Price</item>
+        <item>Category</item>
+        <item>Occasion</item>
+    </string-array>
+</resources>
